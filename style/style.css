@@ -1,0 +1,260 @@
+/* Basic Setup  */
+main {
+    background-color: #9F9F9F ;
+}
+.sub-section-1{
+    padding: 30px;
+}
+.container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.section-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
+.nav-bar {
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #562EFF;
+}
+.logo  {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo h3{
+    font-size: larger;
+    color: white;
+}
+.logo > img {
+    width: 10%;
+    height: auto;
+}
+.navigations{
+    padding-right:2rem ;
+}
+.navigations > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+}
+/* header section */
+
+/* section-1 */
+
+.section-1 , .section-2 {
+    padding: 2rem;
+}
+.sub-sec-1 , .sub-sec-2 {
+    padding: 30px;
+    background-color: #FFFFFF; 
+}
+.sub-sec-1 {
+    border-radius: 8px 8px 0px 0px;
+}
+.sub-sec-2{
+    border-radius: 0px 0px 8px 8px;
+}
+.sub-sec-1 , .sub-sec-2 h2  ,  .section-2 h2 {
+    color: #562EFF;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr );
+    padding-top: 40px;
+    row-gap: 2rem;
+}
+.players-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.plr-img {
+    width: 56px;
+}
+
+
+/* sub-sec-2  */
+
+.blogs {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 3rem;
+}
+.blog {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.blog-img {
+    flex: auto;
+    display: flex;
+    align-items: center;
+}
+.blog-info {
+    flex: 80rem;
+}
+.blog-img > img  {
+    width: 100%;
+    height: 100%;
+}
+.blog-title{
+    font-weight: 700;
+}
+.blog-author {
+    font-size: .75rem;
+}
+.violet {
+    color: #562EFF;
+}
+.course-read {
+    color: #ED6B4F;
+}
+/* section 2 */
+
+.sub-section-1 {
+    background-color: white;
+    border-radius: 8px;
+}
+.courses {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2rem;
+}
+.course-img {
+    width: 100%;
+    height: auto;
+}
+
+/* icon set */
+.icons-fill {
+    width: 16px;
+}
+.icons-clock {
+    width: 16px;
+}
+.course-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.course-rating ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.course-rating ul > li {
+    padding: 2px;
+}
+.course-time{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 1rem;
+    background-color: #FFE4E8;
+    color: #FF4A60;
+}
+.card-des{
+    height: 115px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+/* responsive css */
+@media screen and (max-width: 480px) { 
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* navigation bar */
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .navigations {
+        padding-right: 0;
+    }
+    .sub-sec-1, .sub-sec-2 h2, .section-2 h2 {
+        padding: 0;
+    }
+
+     /* section -1  */
+     .section-1 {
+        padding: 0;
+        text-align: center;
+     }
+    .players {
+        display: grid;
+        grid-template-columns: repeat( 2 , 1fr );
+        justify-content: center ;
+        align-items: center;
+        row-gap: 1rem; 
+        padding: 20px;
+    }
+    .plr-name {
+        font-size: 10px;
+    }
+    .players-info {
+        gap: 0.2rem;
+    }
+    .blogs {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .blog {
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .blog-info {
+        flex: 2rem;
+    }
+    .blog-img > img {
+        padding-bottom: 1rem;
+    }
+
+ /* section 2 */
+
+ .section-2  {
+    text-align: center;
+    padding: 0;
+    padding-top: 1rem;
+ }
+ .sub-section-1 {
+    padding: 1rem;
+ }
+ .courses {
+    grid-template-columns: repeat(1 , 1fr);
+}
+.course-rating {
+    gap: 17px;
+    justify-content: center;
+}
+.card-des {
+    height: 115px;
+    align-items: center;;
+}
+
+}
+
