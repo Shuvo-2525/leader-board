@@ -49,9 +49,9 @@ main {
 
 /* section-1 */
 
-.section-1 , .section-2 {
-    padding: 2rem;
-}
+
+
+
 .sub-sec-1 , .sub-sec-2 {
     padding: 30px;
     background-color: #FFFFFF; 
@@ -179,9 +179,9 @@ main {
 /* responsive css */
 @media screen and (max-width: 480px) { 
 
-    .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
+    .section-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     /* navigation bar */
@@ -203,7 +203,7 @@ main {
 
      /* section -1  */
      .section-1 {
-        padding: 0;
+        padding-top: 2rem;
         text-align: center;
      }
     .players {
@@ -241,12 +241,15 @@ main {
     text-align: center;
     padding: 0;
     padding-top: 1rem;
+    padding-bottom: 1rem;
  }
  .sub-section-1 {
     padding: 1rem;
  }
  .courses {
     grid-template-columns: repeat(1 , 1fr);
+    justify-content: center;
+    padding: 25px;
 }
 .course-rating {
     gap: 17px;
