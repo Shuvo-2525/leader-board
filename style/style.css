@@ -145,7 +145,7 @@ main {
 .course-rating {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 5px;
 }
 .course-rating ul {
@@ -172,6 +172,7 @@ main {
     justify-content: space-between;
     flex-direction: column;
 }
+
 
 
 
@@ -253,8 +254,9 @@ main {
 }
 .card-des {
     height: 115px;
-    align-items: center;;
+    align-items: center;
 }
+
 
 }
 
